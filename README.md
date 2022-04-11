@@ -11,14 +11,14 @@ This repo is intendend to be a single fixture for the [Goddard Fortran Ecosystem
 | fArgParse   | v1.2.0 |
 | yaFyaml     | v1.0-beta8 |
 | pFlogger    | v1.8.0 |
-
+| pFUnit      | v4.2.5 |
 
 ## Set up
 
 Clone the repository and update the submodules. Note that the `--recursive` flag to `git submodule update` is not required:
 ```console
-$ git clone https://github.com/LiamBindle/GFE-SDK.git
-$ cd GFE-SDK
+$ git clone https://github.com/Goddard-Fortran-Ecosystem/GFE.git
+$ cd GFE
 $ git submodule update --init     # don't need --recursive
 ```
 
@@ -31,13 +31,13 @@ $ cmake .. -DCMAKE_INSTALL_PREFIX=/my/software
 ...
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/user/GFE-SDK/build
+-- Build files have been written to: /home/user/GFE/build
 ```
 
 Compile all the GFE libraries
 
 ```console
-$ make -j20
+$ make -j6
 ```
 
 and lastly install (necessary for testing):
@@ -48,14 +48,14 @@ $ make install
 
 ### Testing
 
-The GFE libraries use the pFUnit unit testing framework. pFUnit is a GFE library itself, so to set up and run the GFE tests we need to build the tests against our installation (previous step). Point CMake to your GFE-SDK install prefix with `CMAKE_PREFIX_PATH`. Builds are enabled by setting `BUILD_TESTING` to a true boolean.
+The GFE libraries use the pFUnit unit testing framework. pFUnit is a GFE library itself, so to set up and run the GFE tests we need to build the tests against our installation (previous step). Point CMake to your GFE install prefix with `CMAKE_PREFIX_PATH`. Builds are enabled by setting `BUILD_TESTING` to a true boolean.
 
 ```console
-$ cmake . -DCMAKE_PREFIX_PATH=/my/software
+$ cmake .. -DCMAKE_PREFIX_PATH=/my/software
 ...
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/user/GFE-SDK/build
+-- Build files have been written to: /home/user/GFE/build
 ```
 
 Compile the tests:
@@ -68,7 +68,7 @@ Finally, the tests can be executed like so
 ```console
 $ ctest
 ctest
-Test project /home/user/GFE-SDK/build
+Test project /home/user/GFE/build
 [ 14%] Built target generate-type-incs
 [ 17%] Built target generate-template-incs
 [ 31%] Built target gftl-shared
