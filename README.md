@@ -51,7 +51,7 @@ $ make install
 The GFE libraries use the pFUnit unit testing framework. pFUnit is a GFE library itself, so to set up and run the GFE tests we need to build the tests against our installation (previous step). Point CMake to your GFE-SDK install prefix with `CMAKE_PREFIX_PATH`. Builds are enabled by setting `BUILD_TESTING` to a true boolean.
 
 ```console
-$ cmake . -DBUILD_TESTING=TRUE -DCMAKE_PREFIX_PATH=/my/software
+$ cmake . -DCMAKE_PREFIX_PATH=/my/software
 ...
 -- Configuring done
 -- Generating done
