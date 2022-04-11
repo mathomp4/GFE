@@ -16,4 +16,5 @@ Initial release
 | fArgParse   | v1.2.0 |
 | yaFyaml     | v1.0-beta8 |
 | pFlogger    | v1.8.0 |
+| pFUnit      | v4.2.5 |
 
