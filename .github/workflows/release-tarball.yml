@@ -1,0 +1,31 @@
+name: Create Complete Release Tarball
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: ${{ github.event.repository.name }}-${{ github.event.release.tag_name }}
+
+      - name: Initialize submodules
+        run : |
+          cd ${GITHUB_WORKSPACE}/${{ github.event.repository.name }}-${{ github.event.release.tag_name }}
+          git submodule update --init
+
+      - name: Create tarball
+        run: |
+          tar --exclude-vcs -cf ${{ github.event.repository.name }}-${{ github.event.release.tag_name }}.tar ${{ github.event.repository.name }}-${{ github.event.release.tag_name }}
+
+      - name: Upload tarball
+        run: |
+          gh release upload ${{ github.event.release.tag_name }} ${{ github.event.repository.name }}-${{ github.event.release.tag_name }}.tar -R ${{ github.repository_owner }}/${{ github.event.repository.name }}
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
