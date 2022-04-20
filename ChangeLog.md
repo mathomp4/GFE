@@ -5,17 +5,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2022-04-20
+
+## Changed
+
+- Updated git submodule URLs to relative URLs
+- Fixed typos in README
+
 ## [1.0.3] - 2022-04-19
 
 ## Changed
 
-- Minor bugfix update to pFUnit
+- Minor bugfix update to pFUnit (v4.2.7)
 
 ## [1.0.2] - 2022-04-19
 
 ## Changed
 
-- Update pFUnit to absorb critical bugfix.
+- Update pFUnit to absorb critical bugfix (v4.2.6)
 
 ## [1.0.1] - 2022-04-11
 

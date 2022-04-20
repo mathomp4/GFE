@@ -1,17 +1,17 @@
 # Goddard Fortran Ecosystem (GFE) SDK
 
-This repo is intendend to be a single fixture for the [Goddard Fortran Ecosystem](https://github.com/Goddard-Fortran-Ecosystem) libraries. This is useful for superprojects that depend on the GFE libraries. It is self-sufficient and prior installations of pFUnit/fArgParse/gFTL-share/gFTL are not required to run the unit tests. 
+This repo is intended to be a single fixture for the [Goddard Fortran Ecosystem](https://github.com/Goddard-Fortran-Ecosystem) libraries. This is useful for superprojects that depend on the GFE libraries. It is self-sufficient and prior installations of pFUnit/fArgParse/gFTL-share/gFTL are not required to run the unit tests. 
 
 ## Current versions
 
-| Package     | Version |
-| :------     | :------ |
-| gFTL        | v1.7.0  |
-| gFTL-shared | v1.4.1 |
-| fArgParse   | v1.2.0 |
+| Package     | Version    |
+| :------     | :------    |
+| gFTL        | v1.7.0     |
+| gFTL-shared | v1.4.1     |
+| fArgParse   | v1.2.0     |
 | yaFyaml     | v1.0-beta8 |
-| pFlogger    | v1.8.0 |
-| pFUnit      | v4.2.5 |
+| pFlogger    | v1.8.0     |
+| pFUnit      | v4.2.7     |
 
 ## Set up
 
