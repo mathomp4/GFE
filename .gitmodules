@@ -1,18 +1,18 @@
 [submodule "gFTL"]
 	path = gFTL
-	url = git@github.com:Goddard-Fortran-Ecosystem/gFTL.git
+	url = https://github.com/Goddard-Fortran-Ecosystem/gFTL.git
 [submodule "gFTL-shared"]
 	path = gFTL-shared
-	url = git@github.com:Goddard-Fortran-Ecosystem/gFTL-shared.git
+	url = https://github.com/Goddard-Fortran-Ecosystem/gFTL-shared.git
 [submodule "fArgParse"]
 	path = fArgParse
-	url = git@github.com:Goddard-Fortran-Ecosystem/fArgParse.git
+	url = https://github.com/Goddard-Fortran-Ecosystem/fArgParse.git
 [submodule "pFUnit"]
 	path = pFUnit
-	url = git@github.com:Goddard-Fortran-Ecosystem/pFUnit.git
+	url = https://github.com/Goddard-Fortran-Ecosystem/pFUnit.git
 [submodule "yaFyaml"]
 	path = yaFyaml
-	url = git@github.com:Goddard-Fortran-Ecosystem/yaFyaml.git
+	url = https://github.com/Goddard-Fortran-Ecosystem/yaFyaml.git
 [submodule "pFlogger"]
 	path = pFlogger
-	url = git@github.com:Goddard-Fortran-Ecosystem/pFlogger.git
+	url = https://github.com/Goddard-Fortran-Ecosystem/pFlogger.git
